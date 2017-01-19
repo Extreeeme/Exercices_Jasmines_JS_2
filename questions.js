@@ -133,7 +133,14 @@ var getFirstHalf = function(string) {
 }
 
 var makeNegative = function(number) {
-    return 'Write your method here';
+    var nombre;
+    if(Math.sign(number) == 1){
+        nombre = number-(number*2);
+    }
+    else{
+        nombre = number;
+    }
+    return nombre;
 }
 
 var numberOfPalindromes = function(array) {
