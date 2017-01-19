@@ -95,7 +95,12 @@ var allElementsExceptFirstThree = function(array) {
 }
 
 var addElementToBeginning = function(array, element) {
-    return 'Write your method here';
+    var tab = new Array;
+    tab.push(element);
+    for(var i = 0; i<array.length; i++){
+        tab.push(array[i]);
+    }
+    return tab;
 }
 
 var sortByLastLetter = function(array) {
