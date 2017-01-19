@@ -104,7 +104,25 @@ var addElementToBeginning = function(array, element) {
 }
 
 var sortByLastLetter = function(array) {
-    return 'Write your method here';
+    var tab = new Array;
+    var j;
+    var minimum;
+    var indice;
+    var mot;
+        while(array.length != 0){
+            minimum = array[0][array[0].length-1];
+            for(var i =0; i<array.length; i++){
+                j = array[i][array[i].length-1];
+                if(j<=minimum){
+                    minimum = j;
+                    mot = array[i];
+                    indice = i;
+                }
+        }
+        tab.push(mot);
+        array.splice(indice,1);
+    }
+    return tab;
 }
 
 var getFirstHalf = function(string) {
