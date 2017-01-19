@@ -126,7 +126,10 @@ var sortByLastLetter = function(array) {
 }
 
 var getFirstHalf = function(string) {
-    return 'Write your method here';
+    tab = "";
+   tab = string.slice(0,Math.round(string.length/2));
+
+    return tab;
 }
 
 var makeNegative = function(number) {
