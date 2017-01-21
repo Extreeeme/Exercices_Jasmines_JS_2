@@ -184,7 +184,23 @@ var shortestWord = function(array) {
 }
 
 var longestWord = function(array) {
-    return 'Write your method here';
+    var comptage = 0;
+    var maximum = 0;
+    var mot_max;
+    for(var k=0; k<array[0].length;k++){
+        maximum++;
+    }
+    for(var i =0; i<array.length;i++){
+        comptage = 0;
+        for(var j =0;j<array[i].length;j++){
+            comptage ++;
+        }
+        if (comptage>maximum){
+            maximum = comptage;
+            mot_max = array[i]
+        }
+    }
+    return mot_max;
 }
 
 var sumNumbers = function(array) {
