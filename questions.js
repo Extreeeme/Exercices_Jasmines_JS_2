@@ -212,7 +212,14 @@ var sumNumbers = function(array) {
 }
 
 var repeatElements = function(array) {
-    return 'Write your method here';
+    var tab = new Array;
+    for(j=0;j<array.length;j++){
+        tab.push(array[j]);
+    }
+    for(var i = 0; i<array.length; i++){
+        tab.push(array[i]);
+    }
+    return tab;
 }
 
 var stringToNumber = function(string) {
