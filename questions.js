@@ -144,11 +144,43 @@ var makeNegative = function(number) {
 }
 
 var numberOfPalindromes = function(array) {
-    return 'Write your method here';
+    var mot_1 = "";
+    var mot_2 = "";
+    tab = new Array;
+    for(var i = 0; i<array.length; i++){
+        mot_1="";
+        mot_2="";
+        for(var j = array[i].length/2; j>=0; j--){
+            mot_1 += array[i][j];
+        }
+        for(var k = array[i].length/2; k<array[i].length;k++){
+            mot_2 += array[i][k];
+        }
+        // if (mot_1 == mot_2){
+            tab.push(array[i]);
+        // }
+    }
+    return tab;
 }
 
 var shortestWord = function(array) {
-    return 'Write your method here';
+    var comptage = 0;
+    var minimum = 0;
+    var mot_mini;
+    for(var k=0; k<array[0].length;k++){
+        minimum ++;
+    }
+    for(var i =0; i<array.length;i++){
+        comptage = 0;
+        for(var j =0;j<array[i].length;j++){
+            comptage ++;
+        }
+        if (comptage<minimum){
+            minimum = comptage;
+            mot_mini = array[i]
+        }
+    }
+    return mot_mini;
 }
 
 var longestWord = function(array) {
