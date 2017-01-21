@@ -223,7 +223,8 @@ var repeatElements = function(array) {
 }
 
 var stringToNumber = function(string) {
-    return 'Write your method here';
+    var nombre = parseInt(string);
+    return nombre;
 }
 
 var calculateAverage = function(array) {
