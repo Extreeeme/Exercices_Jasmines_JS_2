@@ -228,8 +228,14 @@ var stringToNumber = function(string) {
 }
 
 var calculateAverage = function(array) {
-    return 'Write your method here';
-}
+    var total = 0;
+    var moyenne;
+    for(var i =0; i<array.length;i++){
+        total = total + array[i];
+    }
+    moyenne = total/array.length-1,
+    return moyenne;
+    }
 
 var getElementsUntilGreaterThanFive = function(array) {
     return 'Write your method here';
