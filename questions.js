@@ -204,7 +204,11 @@ var longestWord = function(array) {
 }
 
 var sumNumbers = function(array) {
-    return 'Write your method here';
+    var total = 0;
+    for(var i = 0; i<array.length; i++){
+        total = total + array[i];
+    }
+    return total;
 }
 
 var repeatElements = function(array) {
